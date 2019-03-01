@@ -1,0 +1,24 @@
+{
+    "name": "我的插件开发",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "插件开发",
+    "background": {
+        "scripts": ["js/background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*"],
+        "js": ["js/jquery-1.9.1.min.js", "js/jquery.cookie.js", "js/popup.js", "js/content-script.js"],
+        "run_at": "document_end"
+    }],
+    "browser_action": {
+        "default_icon": "image/icon.png",
+        "default_popup": "html/popup.html"
+    },
+    "permissions": ["contextMenus", "tabs"],
+    "icons": {
+        "16": "image/icon.png",
+        "48": "image/icon.png",
+        "128": "image/icon.png"
+    }
+}
