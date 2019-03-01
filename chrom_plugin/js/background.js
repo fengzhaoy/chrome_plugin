@@ -9,4 +9,3 @@ chrome.contextMenus.create({
         });
     }
 });
-//接受后台发送过来的参数，request.greeting 就是后台页面的greeting: msg

@@ -7,15 +7,21 @@
         "scripts": ["js/background.js"]
     },
     "content_scripts": [{
-        "matches": ["http://*/*"],
-        "js": ["js/jquery-1.9.1.min.js", "js/jquery.cookie.js", "js/popup.js", "js/content-script.js"],
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": ["js/jquery-3.1.1.min.js",
+            "js/backtop.js",
+            "js/content-script.js"
+        ],
         "run_at": "document_end"
     }],
     "browser_action": {
         "default_icon": "image/icon.png",
         "default_popup": "html/popup.html"
     },
-    "permissions": ["contextMenus", "tabs"],
+    "permissions": ["contextMenus", "tabs", "http://*/*", "https://*/*"],
     "icons": {
         "16": "image/icon.png",
         "48": "image/icon.png",
