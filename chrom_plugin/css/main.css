@@ -1,7 +1,5 @@
-@font-face { font-family: "Digital"; src: url('../fonts/Adequate-ExtraLight.ttf'); }
-@font-face { font-family: "Micro"; src: url('../fonts/MicroExtendFLF-Italic.ttf'); }
 body {
-	background-image: url(../img/bg.jpg);
+	background-image: url(../image/bg.jpg);
 	background-size: cover;
 	background-position: bottom center;
 	background-color:#FFF;
@@ -21,7 +19,6 @@ body {
 	display:table-cell;
 	float:left;
 	vertical-align: top;
-	font-family: "Muli-Light";
 }
 .time, .date, .seconds, .day , .hello{
 	font-family: "Micro";
@@ -31,7 +28,6 @@ body {
 .content .innerr {
 	display:table-cell;
 	vertical-align: top;
-	font-family: "Muli-Light";
 }
 
 .kuang{
